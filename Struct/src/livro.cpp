@@ -8,17 +8,16 @@ Ler os valores para a estrutura e imprimir a média do número de páginas do li
 #include <stdio.h>
 
 struct Livro {
-    char titulo[50]; // Título do livro
-    int anoEdicao; // Ano de edição do livro
-    int numPaginas; // Número de páginas do livro
-    float preco; // Preço do livro
+    char titulo[50];
+    int anoEdicao; 
+    int numPaginas; 
+    float preco; 
 };
 
 int main() {
 
-    Livro livros[5]; // Vetor de livros
-    int somaPaginas = 0; // Variável para armazenar a soma das páginas dos livros
-
+    Livro livros[5]; 
+    int somaPaginas = 0; 
     for (int i = 0; i < 5; i++) {
 
         printf("Digite o título do livro %d: ", i + 1);
@@ -41,14 +40,3 @@ int main() {
 }
 
 
-/*Este código em C++ define uma estrutura chamada Livro e um programa principal que cria um vetor de Livro, lê os valores para cada livro e calcula a média do número de páginas dos livros.
-
-A estrutura Livro é definida com quatro membros: titulo, que é uma matriz de caracteres, anoEdicao, que é um número inteiro, numPaginas, que também é um número inteiro, e preco, que é um número de ponto flutuante. Esses membros são usados para armazenar informações sobre um livro.
-
-No programa principal, um vetor de Livro chamado livros é criado. Este vetor pode armazenar cinco livros. Uma variável somaPaginas também é criada para armazenar a soma do número de páginas dos livros.
-
-Em seguida, um loop for é usado para ler os valores para cada livro. Para cada livro, o programa pede ao usuário para digitar o título, o ano de edição, o número de páginas e o preço. O número de páginas de cada livro é adicionado à somaPaginas.
-
-Depois que todos os livros foram lidos, o programa calcula a média do número de páginas dos livros dividindo a somaPaginas por 5. Esta média é então impressa na tela com duas casas decimais.
-
-Finalmente, o programa retorna 0, que é uma convenção em C++ para indicar que o programa terminou com sucesso.*/
